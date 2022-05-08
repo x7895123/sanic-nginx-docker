@@ -7,4 +7,4 @@ FROM python:3.8.7
 RUN pip install --upgrade pip
 
 # install requirements
-RUN pip install -r .\app\requirements.txt
+RUN pip install -r ./app/requirements.txt
