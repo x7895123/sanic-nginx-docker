@@ -3,8 +3,14 @@
 
 FROM python:3.8.7
 
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+ADD ./api /app
+
 # upgrade pip
 RUN pip install --upgrade pip
 
 # install requirements
-RUN pip install -r ./app/requirements.txt
+RUN pip install -r requirements.txt
