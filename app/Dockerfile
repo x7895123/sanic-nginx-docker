@@ -1,13 +1,14 @@
 # git config --global credential.helper store
 # docker exec -it {container_id} /bin/sh
 
+
 FROM python:3.8.7
 
 # Set the working directory to /app
-WORKDIR /usr/src
+WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-ADD . /usr/src
+ADD . /app
 
 # upgrade pip
 RUN pip install --upgrade pip
