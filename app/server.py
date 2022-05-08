@@ -7,7 +7,7 @@ from app.utils.helper import hello_world
 
 SANIC_PREFIX = "SANIC_"
 
-app = Sanic()
+app = Sanic('test')
 
 
 @app.route("/hello-world")
