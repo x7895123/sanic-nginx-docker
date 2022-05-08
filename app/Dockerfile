@@ -7,7 +7,7 @@ FROM python:3.8.7
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-ADD ./api /app
+ADD ./app /app
 
 # upgrade pip
 RUN pip install --upgrade pip
