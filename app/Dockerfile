@@ -4,10 +4,10 @@
 FROM python:3.8.7
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /usr/src
 
 # Copy the current directory contents into the container at /app
-ADD . /app
+ADD . /usr/src
 
 # upgrade pip
 RUN pip install --upgrade pip
