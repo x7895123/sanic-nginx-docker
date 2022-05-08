@@ -3,7 +3,7 @@ import os
 from sanic import Sanic
 from sanic.response import json
 
-from app.utils.helper import hello_world
+from utils.helper import hello_world
 
 SANIC_PREFIX = "SANIC_"
 
